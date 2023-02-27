@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "clean-architecture-example"
+version = "0.0.1"
+description = "This is the trying to make the base structure for app on python and FastAPI with my vision of the Clean Architecture"
+authors = ["Nikita Ryzhenkov <nikita.ryzhenkoff@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+packages = [{include = "clean_architecture_example"}]
+
+[tool.poetry.dependencies]
+python = "3.10.10"
+fastapi = "0.92.0"
+uvicorn = "0.20.0"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "1.0.0"
+sqlalchemy-stubs = "0.4"
+flake8 = "6.0.0"
+autoflake = "2.0.1"
+isort = "5.12.0"
+black = "23.1.0"
+pyupgrade = "3.3.1"
+pre-commit = "3.0.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
